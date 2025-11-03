@@ -3,11 +3,7 @@
 #include <stdio.h>
 
 static long long g_q;
-static void sum_equal_mod(zbior_ary A, zbior_ary B, zbior_ary R, long long* it_A, long long* it_B, int* it_R);
-
-static long long min(long long a, long long b) {
-    return a < b ? a : b;
-}
+static void sum_equal_mod(zbior_ary A, zbior_ary B, zbior_ary R, long long* it_A, long long* it_B, long long* it_R);
 
 static long long max(long long a, long long b) {
     return a > b ? a : b;
@@ -33,7 +29,7 @@ zbior_ary ciag_arytmetyczny(int a, int q, int b){
 }
 
 zbior_ary singleton(int a){
-    return ciag_arytmetyczny(a, g_q, a);
+    return ciag_arytmetyczny(a, (int)g_q, a);
 }
 
 unsigned moc(zbior_ary A){
