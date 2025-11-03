@@ -149,6 +149,7 @@ zbior_ary suma(zbior_ary A, zbior_ary B){
     return R;
 }
 
+// Funkcja dodająca wszystkie segmenty A i B o podanej reszcie mod q, zapisujac wynik w R
 static void sum_equal_mod(zbior_ary A, zbior_ary B, zbior_ary R, long long* start_A, long long* start_B, long long* it_R){
     long long residue = positive_mod(A.segs[*start_A].start, g_q);
 
