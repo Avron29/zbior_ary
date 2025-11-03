@@ -3,6 +3,7 @@
 #include <stdio.h>
 
 static long long g_q;
+static void sum_equal_mod(zbior_ary A, zbior_ary B, zbior_ary R, long long* it_A, long long* it_B, int* it_R);
 
 static long long min(long long a, long long b) {
     return a < b ? a : b;
