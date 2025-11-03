@@ -15,10 +15,6 @@ typedef struct zbior_ary {
     segment_ary* segs;
 } zbior_ary;
 
-void suma_mod(zbior_ary* A, zbior_ary* B, zbior_ary* R, long long* start_A, long long* start_B, long long* it_R);
-
-void print(zbior_ary A);
-
 /* Najlepiej nie modyfikowac nic ponizej. */
 
 // Funkcja daje w wyniku zbior reprezentujacy ciag arytmetyczny o elemencie poczatkowym a, końcowym b i roznicy q>0, tj. {a,a+q,...,b}.
@@ -46,5 +42,6 @@ unsigned moc(zbior_ary A);
 
 // Wynikiem funkcji jest Ary_q(A), czyli minimalna liczba parami rozlacznych ciagow arytmetycznych o roznicy q, ktorych suma jest zbior A.
 unsigned ary(zbior_ary A);
+
 
 #endif
